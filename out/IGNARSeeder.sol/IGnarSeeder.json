@@ -1,0 +1,535 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "nounId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "contract IGnarDescriptor",
+          "name": "descriptor",
+          "type": "address"
+        }
+      ],
+      "name": "generateSeed",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint48",
+              "name": "background",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint48",
+              "name": "body",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint48",
+              "name": "accessory",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint48",
+              "name": "head",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint48",
+              "name": "glasses",
+              "type": "uint48"
+            }
+          ],
+          "internalType": "struct IGnarSeeder.Seed",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "generateSeed(uint256,address)": "422e2e99"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nounId\",\"type\":\"uint256\"},{\"internalType\":\"contract IGnarDescriptor\",\"name\":\"descriptor\",\"type\":\"address\"}],\"name\":\"generateSeed\",\"outputs\":[{\"components\":[{\"internalType\":\"uint48\",\"name\":\"background\",\"type\":\"uint48\"},{\"internalType\":\"uint48\",\"name\":\"body\",\"type\":\"uint48\"},{\"internalType\":\"uint48\",\"name\":\"accessory\",\"type\":\"uint48\"},{\"internalType\":\"uint48\",\"name\":\"head\",\"type\":\"uint48\"},{\"internalType\":\"uint48\",\"name\":\"glasses\",\"type\":\"uint48\"}],\"internalType\":\"struct IGnarSeeder.Seed\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/IGNARSeeder.sol\":\"IGnarSeeder\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"src/interfaces/IGNARDescriptor.sol\":{\"keccak256\":\"0x8d94a661e5cb27c635d704c8a64d284b6fe412a87458f03b88a994ce085dbb6f\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://1edfc4cecd8b390e80139b85b811970b281e196e761339d1ed1a00f24290be61\",\"dweb:/ipfs/QmSjEeKqbkcH8wHBpCecEnAwgFYRcT38iHQCo2H37GWUvH\"]},\"src/interfaces/IGNARSeeder.sol\":{\"keccak256\":\"0x8122d80fd431b48e0989376511dac5e9008c207c28103c6ead89ed5974cd07a8\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://6b61f96ddb87b13970ca9509f4dfe0bec17529a71a23d8309e703b89f280fe91\",\"dweb:/ipfs/QmfP6j3VMLbNXvLhjmW3NcPB5s5RMPApzfnRRdXHvfR6co\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "nounId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "contract IGnarDescriptor",
+              "name": "descriptor",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "generateSeed",
+          "outputs": [
+            {
+              "internalType": "struct IGnarSeeder.Seed",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint48",
+                  "name": "background",
+                  "type": "uint48"
+                },
+                {
+                  "internalType": "uint48",
+                  "name": "body",
+                  "type": "uint48"
+                },
+                {
+                  "internalType": "uint48",
+                  "name": "accessory",
+                  "type": "uint48"
+                },
+                {
+                  "internalType": "uint48",
+                  "name": "head",
+                  "type": "uint48"
+                },
+                {
+                  "internalType": "uint48",
+                  "name": "glasses",
+                  "type": "uint48"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/IGNARSeeder.sol": "IGnarSeeder"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/interfaces/IGNARDescriptor.sol": {
+        "keccak256": "0x8d94a661e5cb27c635d704c8a64d284b6fe412a87458f03b88a994ce085dbb6f",
+        "urls": [
+          "bzz-raw://1edfc4cecd8b390e80139b85b811970b281e196e761339d1ed1a00f24290be61",
+          "dweb:/ipfs/QmSjEeKqbkcH8wHBpCecEnAwgFYRcT38iHQCo2H37GWUvH"
+        ],
+        "license": "GPL-3.0"
+      },
+      "src/interfaces/IGNARSeeder.sol": {
+        "keccak256": "0x8122d80fd431b48e0989376511dac5e9008c207c28103c6ead89ed5974cd07a8",
+        "urls": [
+          "bzz-raw://6b61f96ddb87b13970ca9509f4dfe0bec17529a71a23d8309e703b89f280fe91",
+          "dweb:/ipfs/QmfP6j3VMLbNXvLhjmW3NcPB5s5RMPApzfnRRdXHvfR6co"
+        ],
+        "license": "GPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IGNARSeeder.sol",
+    "id": 2830,
+    "exportedSymbols": {
+      "IGnarDescriptor": [
+        2802
+      ],
+      "IGnarSeeder": [
+        2829
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "36:380:8",
+    "nodes": [
+      {
+        "id": 2804,
+        "nodeType": "PragmaDirective",
+        "src": "36:23:8",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".6"
+        ]
+      },
+      {
+        "id": 2806,
+        "nodeType": "ImportDirective",
+        "src": "61:54:8",
+        "nodes": [],
+        "absolutePath": "src/interfaces/IGNARDescriptor.sol",
+        "file": "./IGNARDescriptor.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 2830,
+        "sourceUnit": 2803,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 2805,
+              "name": "IGnarDescriptor",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2802,
+              "src": "69:15:8",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 2829,
+        "nodeType": "ContractDefinition",
+        "src": "117:298:8",
+        "nodes": [
+          {
+            "id": 2817,
+            "nodeType": "StructDefinition",
+            "src": "145:138:8",
+            "nodes": [],
+            "canonicalName": "IGnarSeeder.Seed",
+            "members": [
+              {
+                "constant": false,
+                "id": 2808,
+                "mutability": "mutable",
+                "name": "background",
+                "nameLocation": "174:10:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 2817,
+                "src": "167:17:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint48",
+                  "typeString": "uint48"
+                },
+                "typeName": {
+                  "id": 2807,
+                  "name": "uint48",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "167:6:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint48",
+                    "typeString": "uint48"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2810,
+                "mutability": "mutable",
+                "name": "body",
+                "nameLocation": "201:4:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 2817,
+                "src": "194:11:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint48",
+                  "typeString": "uint48"
+                },
+                "typeName": {
+                  "id": 2809,
+                  "name": "uint48",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "194:6:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint48",
+                    "typeString": "uint48"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2812,
+                "mutability": "mutable",
+                "name": "accessory",
+                "nameLocation": "222:9:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 2817,
+                "src": "215:16:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint48",
+                  "typeString": "uint48"
+                },
+                "typeName": {
+                  "id": 2811,
+                  "name": "uint48",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "215:6:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint48",
+                    "typeString": "uint48"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2814,
+                "mutability": "mutable",
+                "name": "head",
+                "nameLocation": "248:4:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 2817,
+                "src": "241:11:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint48",
+                  "typeString": "uint48"
+                },
+                "typeName": {
+                  "id": 2813,
+                  "name": "uint48",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "241:6:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint48",
+                    "typeString": "uint48"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2816,
+                "mutability": "mutable",
+                "name": "glasses",
+                "nameLocation": "269:7:8",
+                "nodeType": "VariableDeclaration",
+                "scope": 2817,
+                "src": "262:14:8",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint48",
+                  "typeString": "uint48"
+                },
+                "typeName": {
+                  "id": 2815,
+                  "name": "uint48",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "262:6:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint48",
+                    "typeString": "uint48"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Seed",
+            "nameLocation": "152:4:8",
+            "scope": 2829,
+            "visibility": "public"
+          },
+          {
+            "id": 2828,
+            "nodeType": "FunctionDefinition",
+            "src": "289:124:8",
+            "nodes": [],
+            "functionSelector": "422e2e99",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "generateSeed",
+            "nameLocation": "298:12:8",
+            "parameters": {
+              "id": 2823,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2819,
+                  "mutability": "mutable",
+                  "name": "nounId",
+                  "nameLocation": "328:6:8",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2828,
+                  "src": "320:14:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2818,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "320:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2822,
+                  "mutability": "mutable",
+                  "name": "descriptor",
+                  "nameLocation": "360:10:8",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2828,
+                  "src": "344:26:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IGnarDescriptor_$2802",
+                    "typeString": "contract IGnarDescriptor"
+                  },
+                  "typeName": {
+                    "id": 2821,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 2820,
+                      "name": "IGnarDescriptor",
+                      "nameLocations": [
+                        "344:15:8"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 2802,
+                      "src": "344:15:8"
+                    },
+                    "referencedDeclaration": 2802,
+                    "src": "344:15:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IGnarDescriptor_$2802",
+                      "typeString": "contract IGnarDescriptor"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "310:66:8"
+            },
+            "returnParameters": {
+              "id": 2827,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2826,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2828,
+                  "src": "400:11:8",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Seed_$2817_memory_ptr",
+                    "typeString": "struct IGnarSeeder.Seed"
+                  },
+                  "typeName": {
+                    "id": 2825,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 2824,
+                      "name": "Seed",
+                      "nameLocations": [
+                        "400:4:8"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 2817,
+                      "src": "400:4:8"
+                    },
+                    "referencedDeclaration": 2817,
+                    "src": "400:4:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Seed_$2817_storage_ptr",
+                      "typeString": "struct IGnarSeeder.Seed"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "399:13:8"
+            },
+            "scope": 2829,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IGnarSeeder",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          2829
+        ],
+        "name": "IGnarSeeder",
+        "nameLocation": "127:11:8",
+        "scope": 2830,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "GPL-3.0"
+  },
+  "id": 8
+}
